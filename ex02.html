@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      #shape {
+        width: 200px;
+        height: 200px;
+        background-color: blue;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="shape"></div>
+    <button id="btn1" onclick="circle()">원</button>
+    <button id="btn2" onclick="rec()">직사각형</button>
+
+    <script>
+      let div = document.getElementById("shape");
+
+      function rec() {
+        div.style.width = "600px";
+        div.style.borderRadius = "0%";
+        div.style.backgroundColor = "tomato";
+      }
+      function circle() {
+        div.style.width = "200px";
+        div.style.borderRadius = "50%";
+        div.style.backgroundColor = "orange";
+      }
+    </script>
+  </body>
+</html>
