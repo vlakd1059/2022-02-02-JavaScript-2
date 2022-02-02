@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <ul>
+      <li>사과</li>
+      <li>멜론</li>
+      <li>파인애플</li>
+    </ul>
+
+    <script>
+      /*
+        li 태그들을 가져와서
+        각각의 과일 색상에 맞게 글자 색깔을 바꿔보자
+    */
+      let frult = document.getElementsByTagName("li");
+      /*
+        getElementById 제외한 다른 요소를 가져오는 메소드는
+        유사 배열형태로 가져온다
+        유사 배열-> pop, push, splice 같은 메소드는 사용할 수 없지만
+        배열 이므로 인덱스를 통해서 원하는 요소를 조작 할 수 있다
+      */
+
+      console.log(frult);
+
+      frult[0].style.color = "red";
+      frult[1].style.color = "green";
+      frult[2].style.color = "yellow";
+    </script>
+  </body>
+</html>
